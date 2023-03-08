@@ -1,0 +1,26 @@
+{
+  "name": "sohagy-btn",
+  "version": "0.0.1",
+  "main": "./dist/sohagy-btn.umd.js",
+  "module": "./dist/sohagy-btn.es.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/sohagy-btn.es.js",
+      "require": "./dist/sohagy-btn.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.1.0"
+  }
+}
