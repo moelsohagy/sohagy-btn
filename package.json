@@ -1,6 +1,6 @@
 {
   "name": "sohagy-btn",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./dist/sohagy-btn.umd.js",
   "module": "./dist/sohagy-btn.es.js",
   "type": "module",
