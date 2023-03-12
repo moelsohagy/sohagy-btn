@@ -1,8 +1,8 @@
-import { openBlock as i, createElementBlock as _, createElementVNode as l, toDisplayString as r, renderSlot as d } from "vue";
+import { openBlock as c, createElementBlock as _, createElementVNode as s, toDisplayString as r, renderSlot as d } from "vue";
 const u = (t, e) => {
   const n = t.__vccOpts || t;
-  for (const [s, o] of e)
-    n[s] = o;
+  for (const [o, l] of e)
+    n[o] = l;
   return n;
 }, p = {
   name: "SohagyBtn",
@@ -16,21 +16,23 @@ const u = (t, e) => {
     }
   }
 }, f = { class: "title" }, y = { class: "subtitle" };
-function g(t, e, n, s, o, a) {
-  return i(), _("button", {
-    class: "sohagy-btn",
-    onClick: e[0] || (e[0] = (...c) => a.alert && a.alert(...c))
-  }, [
-    l("span", f, r(n.title), 1),
-    l("span", y, r(n.subtitle), 1),
-    d(t.$slots, "default", {}, void 0, !0)
+function b(t, e, n, o, l, a) {
+  return c(), _("div", null, [
+    s("button", {
+      class: "sohagy-btn",
+      onClick: e[0] || (e[0] = (...i) => a.alert && a.alert(...i))
+    }, [
+      s("span", f, r(n.title), 1),
+      s("span", y, r(n.subtitle), 1),
+      d(t.$slots, "default", {}, void 0, !0)
+    ])
   ]);
 }
-const h = /* @__PURE__ */ u(p, [["render", g], ["__scopeId", "data-v-e7cad789"]]), S = {
+const g = /* @__PURE__ */ u(p, [["render", b], ["__scopeId", "data-v-5124ab4b"]]), m = {
   install: (t, e) => {
-    t.component("SohagyBtn", h);
+    t.component("SohagyBtn", g);
   }
 };
 export {
-  S as default
+  m as default
 };

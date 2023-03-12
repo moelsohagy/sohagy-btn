@@ -1,9 +1,11 @@
 <template>
-  <button class="sohagy-btn" @click="alert">
-    <span class="title">{{ title }}</span>
-    <span class="subtitle">{{ subtitle }}</span>
-    <slot></slot>
-  </button>
+  <div>
+    <button class="sohagy-btn" @click="alert">
+      <span class="title">{{ title }}</span>
+      <span class="subtitle">{{ subtitle }}</span>
+      <slot></slot>
+    </button>
+  </div>
 </template>
 
 <script>
